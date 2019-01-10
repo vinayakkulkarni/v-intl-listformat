@@ -9,7 +9,6 @@
 ## Requirements
 
 * [Vue.js](https://vuejs.org/) 2.x
-* [Semantic-UI](https://semantic-ui.com/) 2.x
 
 ## :white_check_mark: Install :ok_hand:
 
@@ -40,7 +39,7 @@ import IntlListFormat from 'v-intl-listformat';
 Vue.component('example-component', {
 	data() {
 		return {
-			yourLocalVariable: 0,
+			yourLocalVariable: ['Frank', 'Christine'],
 		};
 	}
 });
@@ -50,10 +49,10 @@ Vue.component('example-component', {
 
 | Name | Type | Required? | Default | Description |
 | --- | --- | --- | --- | --- |
-| `type` | String | No | `star` | The type of rating component will it be? SUI has `stars` &`heart`. |
-| `clearable` | Boolean | No | `true` | Whether the rating is clearable or not. [Read the SUI Docs on this](https://semantic-ui.com/modules/rating.html#/settings) |
-| `max` | String | No | `5` | A number representing the maximum ratings that can be made available. |
-| `initial` | String | No | `0` | A number representing the default rating to apply. |
+| `locale` | String | No | `en` | Locale you want to initialise the formatting to be done. |
+| `payload` | Array | Yes | `[]` | Locale you want to initialise the formatting to be done. |
+| `type` | String | No | `''` | Type can be `disjunction` or `unit`. |
+| `style` | String | No | `''` | Style is passed with type, values can be `short` or `narrow`. |
 
 ## NPM :octocat:  
 
