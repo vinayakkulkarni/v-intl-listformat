@@ -51,11 +51,19 @@ module.exports = function(config) {
 
       // Browserify config
       browserify: {
-          transform: [
-              ['babelify', { presets: ['es2015'] }],
-              ['aliasify', { aliases: { 'vue': 'vue/dist/vue.js' } }]
+        transform: [
+          ['babelify', { presets: ['env'] }],
+          [
+            'aliasify',
+            {
+              aliases: {
+                vue: 'vue/dist/vue.js',
+                'v-intl-listformat': './dist/v-intl-listformat.js',
+              },
+            },
           ],
-          debug: true
-      }
+        ],
+        debug: true,
+      },
   })
 }

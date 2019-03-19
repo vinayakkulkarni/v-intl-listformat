@@ -1,1 +1,3 @@
-module.exports = require('./VIntlListFormat.vue');
+import VIntlListFormat from './VIntlListFormat.vue';
+
+export default VIntlListFormat;

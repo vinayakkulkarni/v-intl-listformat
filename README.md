@@ -4,7 +4,7 @@
 
 + This is [on GitHub](https://github.com/vinayakkulkarni/v-intl-listformat)  so let me know if I've b0rked it somewhere, give me a star :star: if you like it :beers:
 
-+ Demo here -> [💯 Webpackbin Link](https://goo.gl/9itxBq)
++ Demo here -> [💯 Codesandbox Demo](https://bit.ly/v-intl-listformat)
 
 ## Requirements
 
@@ -32,7 +32,8 @@ import IntlListFormat from 'v-intl-listformat';
 ## :white_check_mark: Example 1 :four_leaf_clover:
 
 ```html
-<intl-local-format v-model="yourLocalVariable"></intl-local-format>
+<intl-list-format v-model="yourLocalVariable"></intl-list-format>
+// → 'Frank and Christine'
 ```
 
 ```javascript
@@ -57,3 +58,18 @@ Vue.component('example-component', {
 ## NPM :octocat:  
 
 [![NPM](https://nodei.co/npm/v-intl-listformat.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/v-intl-listformat/)
+
+## Contributing
+
+1.  Fork it!
+2.  Create your feature branch: `git checkout -b my-new-feature`
+3.  Commit your changes: `git commit -am 'Add some feature'`
+4.  Push to the branch: `git push origin my-new-feature`
+5.  Submit a pull request :D
+
+## Author
+
+**v-intl-listformat** © [Vinayak](https://github.com/vinayakkulkarni), Released under the [MIT](./LICENSE) License.<br>
+Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarni/v-intl-listformat/contributors)).
+
+> [vinayak.pw](https://vinayak.pw) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
