@@ -8,7 +8,11 @@
         "url": "https://vinayak.site"
     },
     "private": false,
-    "main": "src/v-intl-listformat.js",
+    "main": "dist/v-intl-listforat.min.js",
+    "module": "dist/v-intl-listforat.esm.js",
+    "files": [
+        "dist/*"
+    ],
     "keywords": [
         "vuejs",
         "list format",
@@ -40,10 +44,10 @@
         "browserify": "^16.2.2",
         "eslint": "^4.9.0",
         "eslint-config-airbnb-base": "^12.1.0",
-        "eslint-plugin-import": "^2.13.0",
+        "eslint-plugin-import": "^2.16.0",
         "eslint-plugin-vue": "^4.7.0",
         "jasmine-core": "^3.3.0",
-        "karma": "^3.1.4",
+        "karma": "^4.0.1",
         "karma-browserify": "^6.0.0",
         "karma-jasmine": "^2.0.1",
         "karma-phantomjs-launcher": "^1.0.4",
@@ -51,18 +55,14 @@
         "phantomjs-prebuilt": "^2.1.16",
         "rollup": "^0.59.4",
         "rollup-plugin-babel": "^3.0.7",
-        "rollup-plugin-uglify": "^4.0.0",
-        "rollup-plugin-vue": "^4.3.2",
-        "vue": "^2.5.16",
-        "vue-template-compiler": "^2.5.16",
-        "watchify": "^3.11.0"
+        "rollup-plugin-commonjs": "^9.2.1",
+        "rollup-plugin-uglify": "^3.0.0",
+        "rollup-plugin-vue": "^4.7.2",
+        "vue": "^2.6.9",
+        "vue-template-compiler": "^2.6.9",
+        "watchify": "^3.11.1"
     },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/vinayakkulkarni/v-intl-listformat/blob/master/LICENSE"
-        }
-    ],
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/vinayakkulkarni/v-intl-listformat/issues"
     },
