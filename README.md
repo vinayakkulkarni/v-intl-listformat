@@ -32,7 +32,7 @@ import IntlListFormat from 'v-intl-listformat';
 ## :white_check_mark: Example 1 :four_leaf_clover:
 
 ```html
-<intl-list-format v-model="yourLocalVariable"></intl-list-format>
+<intl-list-format :payload="name"></intl-list-format>
 // → 'Frank and Christine'
 ```
 
@@ -40,7 +40,7 @@ import IntlListFormat from 'v-intl-listformat';
 Vue.component('example-component', {
 	data() {
 		return {
-			yourLocalVariable: ['Frank', 'Christine'],
+			name: ['Frank', 'Christine'],
 		};
 	}
 });
@@ -50,10 +50,10 @@ Vue.component('example-component', {
 
 | Name | Type | Required? | Default | Description |
 | --- | --- | --- | --- | --- |
-| `locale` | String | No | `en` | Locale you want to initialise the formatting to be done. |
 | `payload` | Array | Yes | `[]` | Locale you want to initialise the formatting to be done. |
-| `type` | String | No | `''` | Type can be `disjunction` or `unit`. |
-| `style` | String | No | `''` | Style is passed with type, values can be `short` or `narrow`. |
+| `locale` | String | No | `en` | Locale you want to initialise the formatting to be done. |
+| `type` | String | No | `null` | Type can be `disjunction` or `unit`. |
+| `style` | String | No | `null` | Style is passed with type, values can be `short` or `narrow`. |
 
 ## NPM :octocat:  
 
