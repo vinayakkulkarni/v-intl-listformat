@@ -18,6 +18,8 @@ npm install v-intl-listformat --save
 yarn add v-intl-listformat
 ```
 
+CDN: [UNPKG](https://unpkg.com/v-intl-listformat/dist/) | [jsDelivr](https://cdn.jsdelivr.net/npm/v-intl-listformat/dist/) (available as `window.VIntlListFormat`)
+
 ## :white_check_mark: Usage :mortar_board:
 
 Register the component globally:

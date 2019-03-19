@@ -5,11 +5,11 @@
     "author": {
         "name": "Vinayak Kulkarni",
         "email": "vinayak.kulkarni@live.com",
-        "url": "https://vinayak.site"
+        "url": "https://vinayak.pw"
     },
     "private": false,
-    "main": "dist/v-intl-listforat.min.js",
-    "module": "dist/v-intl-listforat.esm.js",
+    "main": "dist/v-intl-listformat.min.js",
+    "module": "dist/v-intl-listformat.esm.js",
     "files": [
         "dist/*"
     ],
@@ -30,7 +30,8 @@
         "test-watch": "karma start karma.conf.js --no-single-run",
         "build": "npm run bundle && npm run bundle:min",
         "bundle": "rollup -c build/rollup.conf.js",
-        "bundle:min": "rollup -c build/rollup.min.conf.js"
+        "bundle:min": "rollup -c build/rollup.min.conf.js",
+        "lint": "eslint 'src/**/*.{js,vue}'"
     },
     "devDependencies": {
         "aliasify": "^2.1.0",
