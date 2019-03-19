@@ -4,7 +4,7 @@
 
 + This is [on GitHub](https://github.com/vinayakkulkarni/v-intl-listformat)  so let me know if I've b0rked it somewhere, give me a star :star: if you like it :beers:
 
-+ Demo here -> [💯 Webpackbin Link](https://goo.gl/9itxBq)
++ Demo here -> [💯 Codesandbox Demo](https://bit.ly/v-intl-listformat)
 
 ## Requirements
 
