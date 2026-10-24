@@ -1,71 +1,79 @@
 {
-    "name": "v-intl-listformat",
-    "description": "Tiny Vue component for Intl.ListFormat",
-    "version": "1.1.2",
-    "author": {
-        "name": "Vinayak Kulkarni",
-        "email": "vinayak.kulkarni@live.com",
-        "url": "https://vinayak.pw"
-    },
-    "private": false,
-    "main": "dist/v-intl-listformat.min.js",
-    "module": "dist/v-intl-listformat.esm.js",
-    "files": [
-        "dist/*"
-    ],
-    "keywords": [
-        "vuejs",
-        "list format",
-        "rate",
-        "Intl.ListFormat",
-        "vue component for Intl.ListFormat",
-        "v-intl-listformat"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/vinayakkulkarni/v-intl-listformat.git"
-    },
-    "scripts": {
-        "test": "npm run bundle && karma start karma.conf.js",
-        "test-watch": "karma start karma.conf.js --no-single-run",
-        "build": "npm run bundle && npm run bundle:min",
-        "bundle": "rollup -c build/rollup.conf.js",
-        "bundle:min": "rollup -c build/rollup.min.conf.js",
-        "lint": "eslint 'src/**/*.{js,vue}'"
-    },
-    "devDependencies": {
-        "aliasify": "^2.1.0",
-        "babel-core": "^6.26.3",
-        "babel-eslint": "^8.2.6",
-        "babel-plugin-transform-runtime": "^6.23.0",
-        "babel-preset-env": "^1.6.0",
-        "babel-preset-stage-2": "^6.24.1",
-        "babel-register": "^6.26.0",
-        "babelify": "^8.0.0",
-        "browserify": "^16.2.2",
-        "eslint": "^4.9.0",
-        "eslint-config-airbnb-base": "^12.1.0",
-        "eslint-plugin-import": "^2.16.0",
-        "eslint-plugin-vue": "^4.7.0",
-        "jasmine-core": "^3.3.0",
-        "karma": "^4.0.1",
-        "karma-browserify": "^6.0.0",
-        "karma-jasmine": "^2.0.1",
-        "karma-phantomjs-launcher": "^1.0.4",
-        "karma-spec-reporter": "^0.0.32",
-        "phantomjs-prebuilt": "^2.1.16",
-        "rollup": "^0.59.4",
-        "rollup-plugin-babel": "^3.0.7",
-        "rollup-plugin-commonjs": "^9.2.1",
-        "rollup-plugin-uglify": "^3.0.0",
-        "rollup-plugin-vue": "^4.7.2",
-        "vue": "^2.6.9",
-        "vue-template-compiler": "^2.6.9",
-        "watchify": "^3.11.1"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/vinayakkulkarni/v-intl-listformat/issues"
-    },
-    "homepage": "https://github.com/vinayakkulkarni/v-intl-listformat#readme"
+  "name": "v-intl-listformat",
+  "version": "1.1.2",
+  "private": false,
+  "description": "Tiny Vue 3 component for Intl.ListFormat — turn an array into a locale-aware list.",
+  "keywords": [
+    "Intl.ListFormat",
+    "i18n",
+    "intl",
+    "list format",
+    "v-intl-listformat",
+    "vue",
+    "vue3"
+  ],
+  "homepage": "https://v-intl-listformat.vinayakkulkarni.dev",
+  "bugs": {
+    "url": "https://github.com/vinayakkulkarni/v-intl-listformat/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vinayak Kulkarni",
+    "email": "inbox.vinayak@gmail.com",
+    "url": "https://vinayakkulkarni.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinayakkulkarni/v-intl-listformat.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "lint": "vp lint",
+    "lint:fix": "vp lint --fix",
+    "format": "vp fmt --write",
+    "format:check": "vp fmt --check",
+    "typecheck": "vue-tsc --noEmit && pnpm --filter v-intl-listformat-demo run typecheck",
+    "test": "vp test run && pnpm --filter v-intl-listformat-demo run test",
+    "build": "vp pack",
+    "build:demo": "pnpm --filter v-intl-listformat-demo run build",
+    "dev:demo": "pnpm --filter v-intl-listformat-demo run dev",
+    "deploy": "pnpm --filter v-intl-listformat-demo run deploy",
+    "prepare": "is-ci || husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@types/node": "^26.6.5",
+    "@vue/test-utils": "^2.5.1",
+    "happy-dom": "^21.0.4",
+    "husky": "^9.1.7",
+    "is-ci": "^4.1.0",
+    "lint-staged": "^17.6.0",
+    "typescript": "^6.0.3",
+    "unplugin-vue": "^8.0.0",
+    "vite-plus": "^1.4.0",
+    "vue": "^3.5.44",
+    "vue-tsc": "^3.3.13"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": ">=26.x"
+    }
+  },
+  "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
 }
