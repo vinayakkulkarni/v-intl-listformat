@@ -40,7 +40,7 @@ export default defineNuxtConfig({
   // property for this host is not created yet).
   runtimeConfig: {
     public: {
-      gtagId: '',
+      gtagId: 'G-CMQW9MCYD7',
       plausibleScriptId: 'pa-tWszSf8vGs4VScGEBxyhX',
       plausibleApiHost: 'https://analytics.geoql.in',
       openpanelClientId: 'e84ebb28-98ed-4bcb-ba18-843041688ba0',
