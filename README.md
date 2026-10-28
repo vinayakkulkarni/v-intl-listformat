@@ -6,7 +6,7 @@
 
 Tiny Vue 3 component for [`Intl.ListFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat). Pass an array, get a locale-aware list: `Frank, Christine, and Flora`.
 
-**Live demo:** https://v-intl-listformat.vinayakkulkarni.dev
+**[Live demo](https://v-intl-listformat.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat)** · [npm](https://www.npmjs.com/package/v-intl-listformat)
 
 ## Requirements
 
@@ -70,6 +70,17 @@ pnpm run deploy       # build the demo and deploy the Cloudflare Worker
 
 The demo lives in `demo/`: a Nuxt app on Cloudflare Workers (`v-intl-listformat-demo`) that renders the component from `src/`.
 
+## More from the author
+
+- [v-intl](https://v-intl.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat) — native Intl formatting components for Vue 3
+- [v-tweakpane](https://v-tweakpane.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat) — Vue 3 wrapper for Tweakpane GUI panels
+- [v-rating](https://v-rating.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat) — star rating component for Vue
+- [v-github-icon](https://v-github-icon.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat) — GitHub Octicons as Vue 3 components
+- [nxui](https://nxui.geoql.in?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat) — animated copy-paste UI components for Vue 3 and Nuxt
+- [shadscan-vue](https://shadscan-vue.geoql.in?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat) — UI-fundamentals audit for shadcn-vue apps
+
+See every project at [vinayakkulkarni.dev/projects](https://vinayakkulkarni.dev/projects?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat) and [geoql.in](https://geoql.in?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat).
+
 ## License
 
-[MIT](./LICENSE) © [Vinayak Kulkarni](https://vinayakkulkarni.dev)
+[MIT](./LICENSE) © [Vinayak Kulkarni](https://vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-intl-listformat)
